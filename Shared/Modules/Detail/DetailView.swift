@@ -56,7 +56,8 @@ struct DetailView: View {
                                 return image
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
-                                    .frame(width: 0.6 * geo.size.width, height: 200, alignment: .center)
+                                    .frame(width: 0.6 * geo.size.width, alignment: .center)
+                                    .frame(maxHeight: 200)
                                     .cornerRadius(12)
                             })
                             VStack {
@@ -102,6 +103,7 @@ struct DetailView: View {
                                     }
                                 }
                             }
+                            .frame(maxHeight: 200, alignment: .center)
                         }
                         .frame(maxHeight: 200)
                         .padding(.horizontal, 16)
