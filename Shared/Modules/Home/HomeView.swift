@@ -64,7 +64,7 @@ struct HomeView: View {
         case .iphoneSE:
             return 0.45 * UIScreen.main.bounds.height
         case .iphoneX, .iphone11:
-            return 0.53 * UIScreen.main.bounds.height
+            return 0.52 * UIScreen.main.bounds.height
         case .iphone12ProMax, .iPad:
             return 0.53 * UIScreen.main.bounds.height
         }
@@ -299,7 +299,7 @@ struct HomeView: View {
                 }
             }
         }
-        .bottomSheet(isPresented: $bookingTicketPresented, height: (0.44 * UIScreen.main.bounds.height) + (height > 0 ? height + 170 : height)) {
+        .bottomSheet(isPresented: $bookingTicketPresented, height: (0.6 * UIScreen.main.bounds.height) + (height > 0 ? height + 170 : height)) {
             ScrollView() {
                 VStack(spacing: 8) {
                     VStack(alignment: .leading) {
